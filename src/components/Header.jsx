@@ -71,7 +71,9 @@ const Header = () => {
           alt='netflix-logo'
         />
 
-        {user && (
+        {
+        // user
+        true && (
           <div className='flex mt-3 mx-auto justify-between  md:mx-0 '>
             <div>
               {showGPT && (
@@ -79,7 +81,7 @@ const Header = () => {
                 <select
                   onChange={handleLanguage}
                   name=''
-                  className='bg-brand-coal mr-2 text-xs text-white h-9 px-4  rounded-full'>
+                  className=' bg-brand-coal mr-1 text-xs text-white h-9 pl-4 pr-2 rounded-sm'>
                   {SUPPORTED_LANGUAGES.map((lang) => (
                     <>
                    
@@ -97,30 +99,37 @@ const Header = () => {
             </div>
 
             <div title="GPT Mode">
+             
               <button
                 onClick={handleGPTSearch}
-                className='px-3 w-[43px] mr-2  ml-2 py-3  hover:bg-opacity-80 bg-brand-charcoal rounded-full text-white font-semibold '>
+                className={`px-3 w-[183px] mr-2 ml-2 py-1 hover:bg-opacity-80 rounded-full font-semibold ${showGPT ? 'bg-amber-300 text-red-950' : 'bg-brand-charcoal text-white'}`}>
                 {showGPT ? (
+                  <div className="flex justify-center items-center gap-2  rounded-2xl h-7 w-44">
+                  <span>GPT Search</span>
                   <Rocket
                     color='yellow'
                     className='my-[-2px] py-1 ml-[-2px]'
                     fill='yellow'
                   />
+                  </div>
                 ) : (
+                  <div className="flex justify-center items-center gap-2">
+                  <span>GPT Search</span>
                   <Rocket className=' my-[-2px] py-1 ml-[-2px]' />
+                  </div>
                 )}
               </button>
             </div>
 
-            <div
+            {/* <div
               className='flex cursor-pointer'
               onClick={() => {
                 setMenuOpen(!menuOpen);
               }}>
               <img className='h-10 rounded-full' src={user?.photoURL} alt='' />
-              {/* */}
+              
               <ChevronDownCircle color='white' className='mt-2 ml-1' />
-            </div>
+            </div> */}
           </div>
         )}
 

@@ -31,3 +31,5 @@ export const MOBILE_LOGO ='https://i.ibb.co/mJv0SH4/718-7188480-icon-netflix-log
 
 export const OPENAI_KEY = import.meta.env.VITE_OPENAPI_KEY
 
+export const GEMINI_KEY = import.meta.env.VITE_GEMINI_KEY
+

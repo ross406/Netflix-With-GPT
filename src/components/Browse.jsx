@@ -50,9 +50,9 @@ const Browse = () => {
               onClick={() => dispatch(toggleGPTSearch())}
               className='my-3'
             />
-            <Link to={"/user"}>
+            {/* <Link to={"/user"}>
               <User2 className='my-3' />
-            </Link>
+            </Link> */}
           </div>
         </>
       ) : (

@@ -30,7 +30,7 @@ function About() {
         <div className='mt-8 md:ml-[150px] grid grid-cols-1 gap-4 sm:grid-cols-3 md:mt-16 lg:gap-x-12'></div>
         <div className='mt-8 text-center md:mt-16'>
           <a
-            href='https://gyandeeparyan-dev.netlify.app/#projects'
+            href='https://roshansharma.netlify.app/'
             target='_blank'>
             <button
               type='button'

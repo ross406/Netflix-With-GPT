@@ -31,10 +31,10 @@ const Body = () => {
       path: "/browse/:movieId",
       element: <MovieDetailsPage/>,
     },
-    {
-      path: "/user",
-      element: <UserDetailsPage/>,
-    },
+    // {
+    //   path: "/user",
+    //   element: <UserDetailsPage/>,
+    // },
     {
       path: "/about",
       element: <About/>,

@@ -45,9 +45,9 @@ calculate_device_height()
                 
                 )}
       
-        <Link to={"/user"}>
+        {/* <Link to={"/user"}>
           <User2 className='my-3 active:bg-white' />
-        </Link>
+        </Link> */}
       </div>
     </>
   );
